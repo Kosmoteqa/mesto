@@ -1,5 +1,8 @@
 .popup__close-button {
   transform: translateX(428px) translateY(-38px);
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 @media screen and (max-width:767px) {

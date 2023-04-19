@@ -12,7 +12,6 @@
     
     <header class="header">
       <img src="./images/Vector.svg" alt="Логотип" class="header__logo">
-      <hr class="header__line">
     </header>
 
     <section class="profile">
@@ -21,59 +20,59 @@
         <div class="profile__info-text">
           <div class="profile__title-edit-button">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <img src="./images/edit.svg" alt="кнопка 'изменить'" class="profile__edit-button">
+            <button type="submit" aria-label="" class="profile__edit-button"><img src="./images/edit.svg" alt="кнопка 'изменить'" class="profile__edit-image"></button>
           </div>
           <p class="profile__about">Исследователь океана</p>
         </div>
       </div>
-      <img src="./images/add.svg" alt="кнопка 'добавить'" class="profile__add-button">
+      <button class="profile__add-button"><img src="./images/add.svg" alt="кнопка 'добавить'" class="profile__add-image"></button>
     </section>
 
     <section class="elements">
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="церковь" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="церковь" class="elements__image">
           <div class="elements__flex">
-            <p class="elements__element-title">Карачаевск</p>
-            <img src="./images/like.svg" alt="" class="elements__like-button">
+            <p class="elements__title">Карачаевск</p>
+            <button type="submit" aria-label="" class="elements__like-button"><img src="./images/like.svg" alt="" class="elements__like-image"></button>
           </div>
       </div>
 
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="степь" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="степь" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__element-title">Гора Эльбрус</p>
+          <p class="elements__title">Гора Эльбрус</p>
           <img src="./images/like.svg" alt="" class="elements__like-button">
         </div>
       </div>
 
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="горы" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="горы" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__element-title">Домбай</p>
+          <p class="elements__title">Домбай</p>
           <img src="./images/like.svg" alt="" class="elements__like-button">
         </div>
       </div>
 
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1088404-unsplash (1).png" alt="степь" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1088404-unsplash (1).png" alt="степь" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__element-title">Гора Эльбрус</p>
+          <p class="elements__title">Гора Эльбрус</p>
           <img src="./images/like.svg" alt="" class="elements__like-button">
         </div>
       </div>
 
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1404681-unsplash (1).png" alt="горы" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1404681-unsplash (1).png" alt="горы" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__element-title">Домбай</p>
+          <p class="elements__title">Домбай</p>
           <img src="./images/like.svg" alt="" class="elements__like-button">
         </div>
       </div>
 
-      <div class="elements__element">
-        <img src="./images/kirill-pershin-1556355-unsplash (1).png" alt="храм" class="elements__element-image">
+      <div class="elements__container">
+        <img src="./images/kirill-pershin-1556355-unsplash (1).png" alt="храм" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__element-title">Карачаево-Ч...</p>
+          <p class="elements__title">Карачаево-Черкессия</p>
           <img src="./images/like.svg" alt="" class="elements__like-button">
         </div>
       </div>
@@ -85,11 +84,11 @@
 
     <div class="popup">
       <div class="popup__container">
-        <img src="./images/крест.svg" alt="крестик" class="popup__close-button">
+       <button class="popup__close-button" type="submit" aria-label=""><img src="./images/крест.svg" alt="крестик" class="popup__close-image"></button>
           <p class="popup__title">Редактировать профиль</p>
-          <form action="" class="popup__form">
-              <input type="text" class="popup__input-name" placeholder="Имя">
-              <input type="text" class="popup__input-about" placeholder="О себе">
+          <form action="" class="popup__form" name="form">
+              <input name="name" type="text" class="popup__input-name" placeholder="Имя">
+              <input name="about" type="text" class="popup__input-about" placeholder="О себе">
             <button type="submit" class="popup__button">Сохранить</button>
           </form>
       </div>
