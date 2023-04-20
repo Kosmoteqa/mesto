@@ -2,6 +2,8 @@
   position: relative;
   margin: auto;
   width: 430px;
+  /* padding-left: 36px;
+  padding-right: 36px; */
   background-color: #fff;
   border-radius: 10px;
 }

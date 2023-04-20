@@ -2,4 +2,9 @@
   padding: 0;
   border: 0;
   background: transparent;
+  width: 282px;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
 }

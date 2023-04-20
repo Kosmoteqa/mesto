@@ -20,60 +20,60 @@
         <div class="profile__info-text">
           <div class="profile__title-edit-button">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button type="submit" aria-label="" class="profile__edit-button"><img src="./images/edit.svg" alt="кнопка 'изменить'" class="profile__edit-image"></button>
+            <button type="button" aria-label="кнопка 'изменить'" class="profile__edit-button"><img src="./images/edit.svg" alt="кнопка 'изменить'" class="profile__edit-image"></button>
           </div>
           <p class="profile__about">Исследователь океана</p>
         </div>
       </div>
-      <button class="profile__add-button"><img src="./images/add.svg" alt="кнопка 'добавить'" class="profile__add-image"></button>
+      <button type="button" aria-label="кнопка 'добавить'" class="profile__add-button"><img src="./images/add.svg" alt="кнопка 'добавить'" class="profile__add-image"></button>
     </section>
 
     <section class="elements">
       <div class="elements__container">
         <img src="./images/kirill-pershin-1088404-unsplash.png" alt="церковь" class="elements__image">
           <div class="elements__flex">
-            <p class="elements__title">Карачаевск</p>
-            <button type="submit" aria-label="" class="elements__like-button"><img src="./images/like.svg" alt="" class="elements__like-image"></button>
+            <h2 class="elements__title">Карачаевск</h2>
+            <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
           </div>
       </div>
 
       <div class="elements__container">
         <img src="./images/kirill-pershin-1404681-unsplash.png" alt="степь" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__title">Гора Эльбрус</p>
-          <img src="./images/like.svg" alt="" class="elements__like-button">
+          <h2 class="elements__title">Гора Эльбрус</h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
         </div>
       </div>
 
       <div class="elements__container">
         <img src="./images/kirill-pershin-1556355-unsplash.png" alt="горы" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__title">Домбай</p>
-          <img src="./images/like.svg" alt="" class="elements__like-button">
+          <h2 class="elements__title">Домбай</h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
         </div>
       </div>
 
       <div class="elements__container">
-        <img src="./images/kirill-pershin-1088404-unsplash (1).png" alt="степь" class="elements__image">
+        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="степь" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__title">Гора Эльбрус</p>
-          <img src="./images/like.svg" alt="" class="elements__like-button">
+          <h2 class="elements__title">Гора Эльбрус</h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
         </div>
       </div>
 
       <div class="elements__container">
-        <img src="./images/kirill-pershin-1404681-unsplash (1).png" alt="горы" class="elements__image">
+        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="горы" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__title">Домбай</p>
-          <img src="./images/like.svg" alt="" class="elements__like-button">
+          <h2 class="elements__title">Домбай</h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
         </div>
       </div>
 
       <div class="elements__container">
-        <img src="./images/kirill-pershin-1556355-unsplash (1).png" alt="храм" class="elements__image">
+        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="храм" class="elements__image">
         <div class="elements__flex">
-          <p class="elements__title">Карачаево-Черкессия</p>
-          <img src="./images/like.svg" alt="" class="elements__like-button">
+          <h2 class="elements__title">Карачаево-Черкессия</h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
         </div>
       </div>
     </section>
@@ -84,15 +84,15 @@
 
     <div class="popup">
       <div class="popup__container">
-       <button class="popup__close-button" type="submit" aria-label=""><img src="./images/крест.svg" alt="крестик" class="popup__close-image"></button>
-          <p class="popup__title">Редактировать профиль</p>
-          <form action="" class="popup__form" name="form">
+       <button class="popup__close-button" type="button" aria-label="крестик"><img src="./images/cross hair.svg" alt="крестик" class="popup__close-image"></button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form class="popup__form" name="form">
               <input name="name" type="text" class="popup__input-name" placeholder="Имя">
               <input name="about" type="text" class="popup__input-about" placeholder="О себе">
-            <button type="submit" class="popup__button">Сохранить</button>
+            <button aria-label="Сохранить" type="submit" class="popup__button">Сохранить</button>
           </form>
       </div>
     </div>
-      <script src="./script/script.js"></script>
+      <script src="./script/index.js"></script>
   </body>
   </html>
