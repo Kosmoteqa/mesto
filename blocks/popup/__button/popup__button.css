@@ -15,6 +15,10 @@
   font-family: 'Inter';
 }
 
+.popup__button:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width:767px) {
   .popup__button {
     max-width: 238px;
