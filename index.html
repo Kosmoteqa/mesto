@@ -29,53 +29,9 @@
     </section>
 
     <section class="elements">
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="церковь" class="elements__image">
-          <div class="elements__flex">
-            <h2 class="elements__title">Карачаевск</h2>
-            <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-          </div>
-      </div>
-
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="степь" class="elements__image">
-        <div class="elements__flex">
-          <h2 class="elements__title">Гора Эльбрус</h2>
-          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-        </div>
-      </div>
-
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="горы" class="elements__image">
-        <div class="elements__flex">
-          <h2 class="elements__title">Домбай</h2>
-          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-        </div>
-      </div>
-
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1088404-unsplash.png" alt="степь" class="elements__image">
-        <div class="elements__flex">
-          <h2 class="elements__title">Гора Эльбрус</h2>
-          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-        </div>
-      </div>
-
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1404681-unsplash.png" alt="горы" class="elements__image">
-        <div class="elements__flex">
-          <h2 class="elements__title">Домбай</h2>
-          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-        </div>
-      </div>
-
-      <div class="elements__container">
-        <img src="./images/kirill-pershin-1556355-unsplash.png" alt="храм" class="elements__image">
-        <div class="elements__flex">
-          <h2 class="elements__title">Карачаево-Черкессия</h2>
-          <button type="submit" aria-label="кнопка 'лайк'" class="elements__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="elements__like-image"></button>
-        </div>
-      </div>
+      <ul class="elements__cards-list">
+        
+      </ul>
     </section>
 
     <footer class="footer">
@@ -93,6 +49,39 @@
           </form>
       </div>
     </div>
-      <script src="./script/index.js"></script>
+
+    <div class="popup popup_add">
+      <div class="popup__container popup__container_add">
+       <button class="popup__close-button" type="button" aria-label="крестик"><img src="./images/cross hair.svg" alt="крестик" class="popup__close-image"></button>
+          <h2 class="popup__title popup__title_add">Новое место</h2>
+          <form class="popup__form popup__form_add" name="formAddCard">
+              <input name="name" type="text" class="popup__input-name popup__input-name_add" placeholder="Название">
+              <input name="about" type="text" class="popup__input-about popup__input-link_add" placeholder="Ссылка на картинку">
+            <button aria-label="Сохранить" type="submit" class="popup__button popup__button_add">Создать</button>
+          </form>
+      </div>
+    </div>
+
+
+    <template class="card" id="template-card">
+        <li class="card__item">
+          <button class="card__delete-button" type="button" aria-label="удалить"><img src="./images/Trash.svg" alt="удалить" class="card__delete-image"></button>
+          <img src="" alt="" class="card__image">
+          <div class="card__info">
+          <h2 class="card__title"></h2>
+          <button type="submit" aria-label="кнопка 'лайк'" class="card__like-button"><img src="./images/like.svg" alt="кнопка 'лайк'" class="card__like-image"></button>
+        </div>
+      </li>
+    </template>
+
+      <div class="popup-image">
+        <div class="popup-image__container">
+          <button class="popup-image__close-button" type="button" aria-label="крестик"><img src="./images/cross hair.svg" alt="крестик" class="popup-image__close-image"></button>
+          <img src="" alt="" class="popup-image__photo">
+        <p class="popup-image__info"></p>
+        </div>
+      </div>
+
+      <script src="./script/index.js" type="module"></script>
   </body>
   </html>
