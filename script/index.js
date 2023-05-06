@@ -13,7 +13,7 @@ const inputAbout = document.querySelector('.popup__input-about')
 const popupAdd = document.querySelector('.popup_add')
 const popupAddForm = popupAdd.querySelector('.popup__form_add')
 const inputCardName = popupAdd.querySelector('.popup__input-name_add')
-const inputCardLink = document.querySelector('.popup__input-link_add')
+const inputCardLink = document.querySelector('.popup__input-about_add')
 const popupCloseButtonAdd = popupAdd.querySelector('.popup__close-button')
 
 const cardsList = document.querySelector('.elements__cards-list')
