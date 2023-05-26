@@ -15,7 +15,7 @@
   outline: none;
 }
 
-.popup__input-about.popup__input_type_error {
+.popup__input-about.input_error {
   border-color: #FF0000;
 }
 

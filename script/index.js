@@ -31,7 +31,8 @@ closeButtonImg.addEventListener("click", () => {
   closePopup(popupImg);
 });
 
-const createCard = (dataCard) => {
+// если убрать list, то картинки из карточек пропадают
+const createCard = (list, dataCard) => {
   // создали карточку клонированием и присвоили новые значения из dataCard
   const cloneCard = templateCard.cloneNode(true);
   const title = cloneCard.querySelector(".card__title");
@@ -112,21 +113,10 @@ const closePopup = function (popup) {
 };
 
 // Функция закрытия попапа на оверлей
-const closeOverlayPopup = function (evt) {
-  const target = evt.target
-  const checkResult = checkPopupOpenedClass(target.className)
-  console.log(target.className)
-  if (target == evt.currentTarget && checkResult) {
-    closePopup(target)
+const closeOverlayPopup = function(evt) {
+  if (evt.target.classList.contains('popup_opened')) {
+     closePopup(evt.target)
   }
-  console.log(target, evt.currentTarget)
-}
-
-// проверка на класс popup_opened
-function checkPopupOpenedClass (data) {
-  const re = data.split(" ")
-  console.log(re)
-  return data.includes('popup_opened')
 }
 
 // функция для слушателя событий формы попапа редактирования профиля

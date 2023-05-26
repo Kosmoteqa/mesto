@@ -16,7 +16,9 @@ function disableSubmit (evt, form, config) {
 function enableValidation (config)  {
   const formList = Array.from(document.querySelectorAll(config.formSelector))
   formList.forEach((form) => {
-  form.addEventListener('submit', () => disableSubmit)
+  form.addEventListener('submit', () =>{
+    disableSubmit(evt, form, config)
+  })
   form.addEventListener('input', () => {
     toggleButton(form, config)
   })
