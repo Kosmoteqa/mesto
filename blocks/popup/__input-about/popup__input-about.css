@@ -1,7 +1,6 @@
 .popup__input-about {
   display: block;
   padding: 0 0 13px;
-  margin-bottom: 30px;
   margin-left: 36px;
   width: 358px;
   border: 0;
@@ -16,10 +15,13 @@
   outline: none;
 }
 
-@media screen and (max-width:767px) {
+.popup__input-about.popup__input_type_error {
+  border-color: #FF0000;
+}
+
+@media screen and (max-width:1279px) {
   .popup__input-about {
     width: 238px;
     margin-left: 0;
-    margin-bottom: 45px;
   }
 }
