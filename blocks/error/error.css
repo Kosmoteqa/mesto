@@ -4,7 +4,7 @@
   color: #FF0000;
   display: block;
   box-sizing: border-box;
-  height: 25px;
+  min-height: 28px;
   margin-left: 36px;
 }
 

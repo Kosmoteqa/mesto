@@ -1,64 +1,68 @@
-// валидация
+export class FormValidator {
+  constructor(config) {
+    this.formSelector = config.formSelector;
+    this.inputSelector = config.inputSelector;
+    this.errorClass = config.errorClass;
+    this.buttonSelector = config.buttonSelector;
+    this.buttonDisabledClass = config.buttonDisabledClass;
+  }
 
-export const formValidationConfig = {
-  formSelector: '.popup__form',
-  inputSelector: '.input',
-  errorClass:'input_error',
-  buttonSelector: '.popup__button',
-  buttonDisabledClass: 'popup__button_invalid'
-}
+  disableSubmit(evt, form) {
+    evt.preventDefault();
+    this.toggleButton(form);
+  }
 
-function disableSubmit (evt, form, config) {
-  evt.preventDefault();
-  toggleButton(form, config)
-}
+  enableValidation() {
+    const formList = Array.from(document.querySelectorAll(this.formSelector));
+    formList.forEach((form) => {
+      form.addEventListener('submit', (evt) => {
+        this.disableSubmit(evt, form);
+      });
 
-function enableValidation (config)  {
-  const formList = Array.from(document.querySelectorAll(config.formSelector))
-  formList.forEach((form) => {
-  form.addEventListener('submit', () =>{
-    disableSubmit(evt, form, config)
-  })
-  form.addEventListener('input', () => {
-    toggleButton(form, config)
-  })
+      this.addInputListeners(form);
+      this.toggleButton(form);
+    });
+  }
 
-  addInputListeners(form, config)
-  toggleButton(form, config)
-  })
-}
+  handleFormInput(evt) {
+    const input = evt.target;
+    const inputId = input.id;
+    const errorElement = document.querySelector(`#${inputId}-error`);
 
-function handleFormInput (evt, config) {
-  const input = evt.target
-  const inputId = input.id
-  const errorElement = document.querySelector(`#${inputId}-error`)
-  
-  if (input.validity.valid) {
-    input.classList.remove(config.errorClass)
-    errorElement.textContent = ''
-  } else {
-    input.classList.add(config.errorClass)
-    errorElement.textContent = input.validationMessage 
+    if (input.validity.valid) {
+      input.classList.remove(this.errorClass);
+      errorElement.textContent = '';
+    } else {
+      input.classList.add(this.errorClass);
+      errorElement.textContent = input.validationMessage;
+    }
+  }
+
+  toggleButton(form) {
+    const buttonSubmit = form.querySelector(this.buttonSelector);
+    const isFormValid = form.checkValidity();
+    buttonSubmit.disabled = !isFormValid;
+    buttonSubmit.classList.toggle(this.buttonDisabledClass, !isFormValid);
+  }
+
+  addInputListeners(form) {
+    const inputList = form.querySelectorAll(this.inputSelector);
+    inputList.forEach((item) => {
+      item.addEventListener('input', (evt) => {
+        this.handleFormInput(evt);
+        this.toggleButton(form);
+      });
+    });
   }
 }
 
-export function toggleButton (form, config) {
-  const buttonSubmit = form.querySelector(config.buttonSelector)
-  const isFormValid = form.checkValidity()
-  buttonSubmit.disabled = !isFormValid
-  buttonSubmit.classList.toggle(config.buttonDisabledClass, !isFormValid)
-  
-}
+const formValidationConfig = {
+  formSelector: '.popup__form',
+  inputSelector: '.input',
+  errorClass: 'input_error',
+  buttonSelector: '.popup__button',
+  buttonDisabledClass: 'popup__button_invalid'
+};
 
-// функция, навешивающая слушатели событий на элементы
-function addInputListeners (form, config) {
-  const inputList = form.querySelectorAll(config.inputSelector)
-  inputList.forEach(function (item){
-    item.addEventListener('input', (evt) => {
-      handleFormInput(evt,config)
-      toggleButton()
-    })
-  })
-}
-
-enableValidation(formValidationConfig)
+const formValidator = new FormValidator(formValidationConfig);
+formValidator.enableValidation();
