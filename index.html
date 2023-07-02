@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Место</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+
+  <body class="page">
+    <header class="header">
+      <img
+        src="e1792cd1bf55c68d1538.svg"
+        alt="Логотип"
+        class="header__logo"
+      />
+    </header>
+
+    <section class="profile">
+      <div class="profile__info">
+        <img
+          src="70a619f43c7040491d5a.png"
+          alt="аватар"
+          class="profile__avatar"
+        />
+        <div class="profile__info-text">
+          <div class="profile__title-edit-button">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button
+              type="button"
+              aria-label="кнопка 'изменить'"
+              class="profile__edit-button"
+            >
+              <img
+                src="8667ac4a523e8fc42e59.svg "
+                alt="кнопка 'изменить'"
+                class="profile__edit-image"
+              />
+            </button>
+          </div>
+          <p class="profile__about">Исследователь океана</p>
+        </div>
+      </div>
+      <button
+        type="button"
+        aria-label="кнопка 'добавить'"
+        class="profile__add-button"
+      >
+        <img
+          src="d86bb2edc2f6eadb96b7.svg"
+          alt="кнопка 'добавить'"
+          class="profile__add-image"
+        />
+      </button>
+    </section>
+
+    <section class="elements">
+      <ul class="elements__cards-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+
+    <div class="popup popup_edit">
+      <div class="popup__container">
+        <button class="" type="button" aria-label="крестик">
+          <img
+            src="2ceb783afbab75916ddc.svg"
+            alt="крестик"
+            class="popup__close-button popup__close-image"
+          />
+        </button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form
+          class="popup__form-edit popup__form"
+          name="form"
+          novalidate
+          autocomplete
+        >
+          <div class="popup__input-span">
+            <input
+              id="input-name"
+              name="name"
+              type="text"
+              class="popup__input-name popup__input"
+              placeholder="Имя"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span id="input-name-error" class="error"></span>
+          </div>
+          <div class="popup__input-span">
+            <input
+              id="input-about"
+              name="about"
+              type="text"
+              class="popup__input-about popup__input"
+              placeholder="О себе"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span id="input-about-error" class="error"></span>
+          </div>
+          <button aria-label="Сохранить" type="submit" class="popup__button">
+            Сохранить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_add" id="popup_add">
+      <div class="popup__container popup__container_add">
+        <button class="" type="button" aria-label="крестик">
+          <img
+            src="2ceb783afbab75916ddc.svg"
+            alt="крестик"
+            class="popup__close-button popup__close-image"
+          />
+        </button>
+        <h2 class="popup__title popup__title_add">Новое место</h2>
+        <form
+          class="popup__form popup__form_add"
+          name="formAddCard"
+          novalidate
+          autocomplete
+        >
+          <div class="popup__input-span">
+            <input
+              id="input-title"
+              name="name"
+              type="text"
+              class="popup__input-name popup__input-name_add popup__input"
+              placeholder="Название"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span id="input-title-error" class="error"></span>
+          </div>
+          <div class="popup__input-span">
+            <input
+              id="input-link"
+              name="link"
+              type="url"
+              class="popup__input-about popup__input-about_add popup__input"
+              placeholder="Ссылка на картинку"
+              required
+            />
+            <span id="input-link-error" class="error"></span>
+          </div>
+          <button
+            aria-label="Сохранить"
+            type="submit"
+            class="popup__button popup__button_add"
+          >
+            Создать
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <template class="card" id="template-card">
+      <li class="card__item">
+        <button class="card__delete-button" type="button" aria-label="удалить">
+          <img
+            src="823b0cf1b0b7e9cb7cad.svg"
+            alt="удалить"
+            class="card__delete-image"
+          />
+        </button>
+        <img
+          src="e787eeb70bb65b7b453a.svg"
+          alt=""
+          class="card__image"
+        />
+        <div class="card__info">
+          <h2 class="card__title"></h2>
+          <button
+            type="submit"
+            aria-label="кнопка 'лайк'"
+            class="card__like-button"
+          ></button>
+        </div>
+      </li>
+    </template>
+
+    <div class="popup popup-image">
+      <div class="popup-image__container">
+        <button
+          class="popup-image__close-button"
+          type="button"
+          aria-label="крестик"
+        >
+          <img
+            src="2ceb783afbab75916ddc.svg"
+            alt="крестик"
+            class="popup__close-button popup-image__close-image"
+          />
+        </button>
+        <img src="#" alt="" class="popup-image__photo" />
+        <p class="popup-image__info"></p>
+      </div>
+    </div>
+  </body>
+</html>

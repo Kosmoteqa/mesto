@@ -1,0 +1,1250 @@
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/normalize.css ***!
+  \**************************************************************************************************************************************************/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/vendor/fonts/fonts.css ***!
+  \****************************************************************************************************************************************************/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(c8ba52b05a9ef10f4758.woff2) format("woff2"),
+  url(8c206db99195777c6769.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(293fd13dbca5a3e450ef.woff2) format("woff2"),
+  url(9053572c46aeb4b16caa.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(15ca31c0a2a68f76d2d1.woff2) format("woff2"),
+  url(c6938660eec019fefd68.woff) format("woff");
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page/page.css ***!
+  \**************************************************************************************************************************************************/
+.page {
+  background-color: #000;
+  font-family: "Inter", "Arial", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  min-width: 320px;
+  color: #fff;
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/header.css ***!
+  \******************************************************************************************************************************************************/
+.header {
+  margin: 45px 200px 40px;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+}
+
+@media screen and (max-width:767px) {
+  .header {
+    margin: 25px auto 42px;
+  }
+}
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header/__logo/header__logo.css ***!
+  \*******************************************************************************************************************************************************************/
+.header__logo {
+  max-width: 142px;
+  padding-bottom: 41px;
+}
+
+@media screen and (max-width:767px){
+  .header__logo {
+    width: 103.74px;
+    margin-left: 27px;
+  }
+}
+/*!********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/profile.css ***!
+  \********************************************************************************************************************************************************/
+.profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px 50px;
+}
+
+@media screen and (max-width:1279px) {
+  .profile {
+    flex-direction: column;
+    max-width: 282px;
+    margin: 0 auto;
+    gap: 36px;
+    margin-bottom: 36px;
+    align-items: center;
+  }
+}
+/*!*************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__avatar/profile__avatar.css ***!
+  \*************************************************************************************************************************************************************************/
+.profile__avatar {
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__avatar {
+    margin: 0 auto;
+    width: 120px;
+  }
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__info/profile__info.css ***!
+  \*********************************************************************************************************************************************************************/
+.profile__info {
+  display: flex;
+  gap: 18px;
+}
+@media screen and (max-width:1279px) {
+  .profile__info {
+    flex-direction: column;
+    gap: 26px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__info-text/profile__info-text.css ***!
+  \*******************************************************************************************************************************************************************************/
+.profile__info-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 16px;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__info-text {
+    gap: 14px;
+  }
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__edit-image/profile__edit-image.css ***!
+  \*********************************************************************************************************************************************************************************/
+.profile__edit-image {
+  border: 1px solid #fff;
+  padding: 7px 7px;
+  align-self: center;
+  width: 10px;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__edit-image {
+    width: 7.5px;
+    margin-bottom: 14px;
+    padding: 5.25px 5.25px;
+    margin: 0;
+  }
+}
+
+.profile__edit-image:hover {
+  opacity: 0.6;
+}
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__edit-button/profile__edit-button.css ***!
+  \***********************************************************************************************************************************************************************************/
+.profile__edit-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  width: 24px;
+}
+
+
+.profile__edit-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__edit-button {
+    width: 18px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__add-image/profile__add-image.css ***!
+  \*******************************************************************************************************************************************************************************/
+.profile__add-image {
+  border: 2px solid #fff;
+  align-self: center;
+  padding: 14px 64px;
+  width: 22px;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__add-image {
+    padding: 17px 132px 17px 134px;
+    width: 16px;
+  }
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__add-button/profile__add-button.css ***!
+  \*********************************************************************************************************************************************************************************/
+.profile__add-button {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: 282px;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__add-button {
+    display: block;
+  }
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__name/profile__name.css ***!
+  \*********************************************************************************************************************************************************************/
+.profile__name {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 294px;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__name {
+    align-self: center;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__about/profile__about.css ***!
+  \***********************************************************************************************************************************************************************/
+.profile__about {
+  max-width: 336px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width:1279px) {
+  .profile__about {
+    max-width: 282px;
+    align-self: center;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/profile/__title-edit-button/profile__title-edit-button.css ***!
+  \***********************************************************************************************************************************************************************************************/
+.profile__title-edit-button {
+  display: flex;
+  gap: 18px;
+}
+
+@media screen and (max-width:767px) {
+  .profile__title-edit-button{
+    gap: 10px;
+  }
+}
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/elements.css ***!
+  \**********************************************************************************************************************************************************/
+.elements {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 17px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width:1279px) {
+  .elements {
+    width: 282px;
+    margin: 0 auto 48px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__container/elements__container.css ***!
+  \*********************************************************************************************************************************************************************************/
+.elements__container {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 282px;
+}
+/*!*************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__image/elements__image.css ***!
+  \*************************************************************************************************************************************************************************/
+.elements__image {
+  border-radius: 10px 10px 0 0;
+}
+/*!*************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__title/elements__title.css ***!
+  \*************************************************************************************************************************************************************************/
+.elements__title {
+  margin: 0;
+  margin-left: 21px;
+  color: #000;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__like-image/elements__like-image.css ***!
+  \***********************************************************************************************************************************************************************************/
+.elements__like-image {
+  padding: 0;
+}
+
+.elements__like-image:hover {
+  opacity: 0.5;
+}
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__like-button/elements__like-button.css ***!
+  \*************************************************************************************************************************************************************************************/
+.elements__like-button {
+  margin-right: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+@media screen and (max-width:1279px) {
+  .elements__like-button {
+    margin-right: 20px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__delete-button/elements__delete-button.css ***!
+  \*****************************************************************************************************************************************************************************************/
+.elements__delete-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.elements__delete-button:hover {
+  opacity: 0.6;
+}
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__delete-image/elements__delete-image.css ***!
+  \***************************************************************************************************************************************************************************************/
+.elements__delete-image {
+  
+}
+/*!***********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__flex/elements__flex.css ***!
+  \***********************************************************************************************************************************************************************/
+.elements__flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 31px;
+}
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements/__cards-list/elements__cards-list.css ***!
+  \***********************************************************************************************************************************************************************************/
+.elements__cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 17px;
+  max-width: 880px;
+  margin: 0 auto 66px;
+  padding: 0;
+}
+
+@media screen and (max-width:1279px) {
+  .elements__cards-list {
+    width: 282px;
+    margin: 0 auto 48px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
+  \******************************************************************************************************************************************************/
+.footer {
+  margin: 0 0 60px 200px;
+}
+
+@media screen and (max-width:1279px) {
+  .footer {
+    margin: 0 auto 36px;
+    max-width: 282px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer/__copyright/footer__copyright.css ***!
+  \*****************************************************************************************************************************************************************************/
+.footer__copyright {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+@media screen and (max-width:1279px) {
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/popup.css ***!
+  \****************************************************************************************************************************************************/
+.popup {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  flex-direction: column;
+  align-items: baseline;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.popup:hover {
+  cursor: pointer;
+}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__form/popup__form.css ***!
+  \*****************************************************************************************************************************************************************/
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+@media screen and (max-width:767px) {
+  .popup__form {
+    margin: 0 22px;
+  }
+}
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__title/popup__title.css ***!
+  \*******************************************************************************************************************************************************************/
+.popup__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+  margin: 25px 0 54px 36px;
+}
+
+@media screen and (max-width:767px) {
+  .popup__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 22px;
+    margin-bottom: 75px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__input-about/popup__input-about.css ***!
+  \*******************************************************************************************************************************************************************************/
+.popup__input-about {
+  display: block;
+  padding: 0 0 13px;
+  margin-left: 36px;
+  width: 358px;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.popup__input-about:focus {
+  outline: none;
+}
+
+.popup__input-about.input_error {
+  border-color: #FF0000;
+}
+
+@media screen and (max-width:1279px) {
+  .popup__input-about {
+    width: 238px;
+    margin-left: 0;
+  }
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__input-name/popup__input-name.css ***!
+  \*****************************************************************************************************************************************************************************/
+.popup__input-name {
+  display: block;
+  padding: 0 0 13px;
+  margin-left: 36px;
+  width: 358px;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.popup__input-name:focus {
+  outline: none;
+}
+
+.popup__input-name.input_error {
+  border-color: #FF0000;
+}
+
+@media screen and (max-width:767px) {
+  .popup__input-name {
+    width: 238px;
+    margin-left: 0;
+  }
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__button/popup__button.css ***!
+  \*********************************************************************************************************************************************************************/
+button {
+  border: none;
+  background-color: white;
+}
+.popup__button {
+  width: 358px;
+  padding: 0;
+  height: 50px;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  margin: 18.34px 36px 37px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  font-family: "Inter";
+}
+
+.popup__button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__button {
+    max-width: 238px;
+    margin: 0 auto 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__button/_invalid/popup__button_invalid.css ***!
+  \**************************************************************************************************************************************************************************************/
+.popup__button_invalid {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  opacity: 0.2;
+  background-color: #fff;
+  color: #000000;
+}
+/*!***************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__container/popup__container.css ***!
+  \***************************************************************************************************************************************************************************/
+.popup__container {
+  position: relative;
+  margin: auto;
+  max-width: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:767px) {
+  .popup__container {
+    max-width: 282px;
+  }
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__close-button/popup__close-button.css ***!
+  \*********************************************************************************************************************************************************************************/
+.popup__close-button {
+  position: absolute;
+  right: -40px;
+  top: -38px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.popup__close-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .popup__close-button {
+    width: 20px;
+    right: 0;
+    top: -36px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__close-image/popup__close-image.css ***!
+  \*******************************************************************************************************************************************************************************/
+.popup__close-image {
+  width: 32px;
+}
+
+@media screen and (max-width:767px) {
+  .popup__close-image {
+    width: 20px;
+  }
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/__input-span/popup__input-span.css ***!
+  \*****************************************************************************************************************************************************************************/
+.popup__input-span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/*!****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/popup-image.css ***!
+  \****************************************************************************************************************************************************************/
+.popup-image {
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  align-items: baseline;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__close-button/popup-image__close-button.css ***!
+  \*********************************************************************************************************************************************************************************************/
+.popup-image__close-button {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.popup-image__close-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+  .popup-image__close-button {
+    width: 20px;
+    right: 0;
+    top: -36px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__close-image/popup-image__close-image.css ***!
+  \*******************************************************************************************************************************************************************************************/
+.popup-image__close-image {
+  position: initial;
+
+  background: none;
+  max-width: 32px;
+}
+
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__info/popup-image__info.css ***!
+  \*****************************************************************************************************************************************************************************/
+.popup-image__info {
+  max-width: 816px;
+  margin: 0;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__photo/popup-image__photo.css ***!
+  \*******************************************************************************************************************************************************************************/
+.popup-image__photo {
+  max-width: 75vw;
+  max-height: 75vh;
+}
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__container/popup-image__container.css ***!
+  \***************************************************************************************************************************************************************************************/
+.popup-image__container {
+  display: flex;
+  margin: auto;
+  max-width: 816px;
+  flex-direction: column;
+  align-items: baseline;
+  position: relative;
+}
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup/_opened/popup_opened.css ***!
+  \*******************************************************************************************************************************************************************/
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/card.css ***!
+  \**************************************************************************************************************************************************/
+.card-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__item/card__item.css ***!
+  \***************************************************************************************************************************************************************/
+.card__item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 282px;
+  list-style-type: none;
+}
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__delete-button/card__delete-button.css ***!
+  \*********************************************************************************************************************************************************************************/
+.card__delete-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.card__delete-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__delete-image/card__delete-image.css ***!
+  \*******************************************************************************************************************************************************************************/
+.card__delete-image {
+  
+}
+/*!***************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__info/card__info.css ***!
+  \***************************************************************************************************************************************************************/
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 31px;
+  align-items: center;
+}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__image/card__image.css ***!
+  \*****************************************************************************************************************************************************************/
+.card__image {
+  display: block;
+  border-radius: 10px 10px 0 0;
+  width: 282px;
+  height: 282px;
+}
+
+.card__image:hover {
+  cursor: pointer;
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__like-button/card__like-button.css ***!
+  \*****************************************************************************************************************************************************************************/
+.card__like-button {
+  margin-right: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  background-image: url(bf45e82757b0b9e50dfb.svg);
+  width: 22px;
+  height: 19px;
+}
+
+.card__like-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media screen and (max-width:1279px) {
+  .card__like-button {
+    margin-right: 20px;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__like-button/_active/card__like-image_active.css ***!
+  \*******************************************************************************************************************************************************************************************/
+.card__like-image_active {
+  background-image: url(e787eeb70bb65b7b453a.svg);
+}
+/*!*****************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/card/__title/card__title.css ***!
+  \*****************************************************************************************************************************************************************/
+.card__title {
+  margin: 0;
+  margin-left: 21px;
+  color: #000;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 212px;
+}
+/*!****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/error/error.css ***!
+  \****************************************************************************************************************************************************/
+.error {
+  font-size: 12px;
+  line-height: 14px;
+  color: #FF0000;
+  display: block;
+  box-sizing: border-box;
+  min-height: 31px;
+  margin-left: 36px;
+}
+
+@media screen and (max-width:1279px) {
+  .error {
+    margin: 0;
+    margin-top: 5px;
+  }
+}
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/pages/index.css ***!
+  \*********************************************************************************************************************************************/
+
