@@ -26,10 +26,7 @@ export class Popup {
         evt.target.classList.contains("popup_opened") ||
         evt.target.classList.contains("popup__close-button")
       ) {
-        console.log("AASX");
         this.close();
-      } else {
-        console.log(evt.target.classList);
       }
     });
   }
