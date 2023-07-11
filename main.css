@@ -1109,10 +1109,10 @@ button {
   background-color: rgba(0, 0, 0, 0.9);
   transition: visibility 0.3s, opacity 0.3s linear;
 }
-/*!*********************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__close-button/popup-image__close-button.css ***!
-  \*********************************************************************************************************************************************************************************************/
-.popup-image__close-button {
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-image/__close/popup-image__close.css ***!
+  \*******************************************************************************************************************************************************************************/
+.popup-image__close {
   position: absolute;
   right: -40px;
   top: -40px;
@@ -1121,13 +1121,13 @@ button {
   background: transparent;
 }
 
-.popup-image__close-button:hover {
+.popup-image__close:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
 @media screen and (max-width:767px) {
-  .popup-image__close-button {
+  .popup-image__close {
     width: 20px;
     right: 0;
     top: -36px;
@@ -1355,10 +1355,10 @@ button {
 .popup-avatar__title {
   margin-top: 34px;
 }
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-avatar/__close-button/popup-avatar__close-button.css ***!
-  \***********************************************************************************************************************************************************************************************/
-.popup-avatar__close-button {
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/popup-avatar/__close/popup-avatar__close.css ***!
+  \*********************************************************************************************************************************************************************************/
+.popup-avatar__close {
   position: unset;
 }
 /*!*********************************************************************************************************************************************!*\
