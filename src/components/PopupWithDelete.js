@@ -6,11 +6,11 @@ export class PopupWithDelete extends Popup {
     this._submit = submit;
   }
   getData() {
-    return {data:this._data, deleteCard:this._deleteCard};
+    return { data: this._data, deleteCard: this._deleteCard };
   }
   setData(data, deleteCard) {
-    this._data = data
-    this._deleteCard = deleteCard
+    this._data = data;
+    this._deleteCard = deleteCard;
   }
 
   setEventListeners() {

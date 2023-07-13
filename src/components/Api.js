@@ -1,85 +1,84 @@
 export default class Api {
-  constructor (options) {
-    this._url = options.url
-    this._headers = options.headers
+  constructor(options) {
+    this._url = options.url;
+    this._headers = options.headers;
   }
 
-    _req (url, options) {
-    return fetch(url,options)
-    .then (this._handleRes)
+  _req(url, options) {
+    return fetch(url, options).then(this._handleRes);
   }
-  
-  _handleRes (res) {
-    if(res.ok) {
+
+  _handleRes(res) {
+    if (res.ok) {
       return res.json();
     }
-    return Promise.reject('error')
+    return Promise.reject("error");
   }
 
-  getUserInfo () {
-    return this._req (`${this._url}/users/me`, {
+  getUserInfo() {
+    return this._req(`${this._url}/users/me`, {
       headers: this._headers,
-      method: 'GET',
-    })
+      method: "GET",
+    });
   }
 
-  getAllCards () {
-    return this._req (`${this._url}/cards`, {
+  getAllCards() {
+    return this._req(`${this._url}/cards`, {
       headers: this._headers,
-      method: 'GET',
-    })
+      method: "GET",
+    });
   }
 
-  setUserInfo (data) {
-    return this._req (`${this._url}/users/me `, {
+  setUserInfo(data) {
+    return this._req(`${this._url}/users/me `, {
       headers: this._headers,
-      method: 'PATCH',
+      method: "PATCH",
       body: JSON.stringify({
         name: data.name,
         about: data.about,
-      })
-    })
+      }),
+    });
   }
 
-  addNewCard (data) {
-    return this._req (`${this._url}/cards`, {
+  addNewCard(data) {
+    return this._req(`${this._url}/cards`, {
       headers: this._headers,
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
         name: data.name,
-        link: data.link
-      })
-    })
+        link: data.link,
+      }),
+    });
   }
 
-  deleteCard (id) {
-    return this._req (`${this._url}/cards/${id}`, {
+  deleteCard(id) {
+    return this._req(`${this._url}/cards/${id}`, {
       headers: this._headers,
-      method: 'DELETE',
-    })
+      method: "DELETE",
+    });
   }
 
-  setLike (id) {
-    return this._req (`${this._url}/cards/${id}/likes `, {
+  setLike(id) {
+    return this._req(`${this._url}/cards/${id}/likes `, {
       headers: this._headers,
-      method: 'PUT',
-    })
+      method: "PUT",
+    });
   }
 
-  deleteLike (id) {
-    return this._req (`${this._url}/cards/${id}/likes `, {
+  deleteLike(id) {
+    return this._req(`${this._url}/cards/${id}/likes `, {
       headers: this._headers,
-      method: 'DELETE',
-    })
+      method: "DELETE",
+    });
   }
 
-  setAvatar (data) {
-    return this._req (`${this._url}/users/me/avatar`, {
+  setAvatar(data) {
+    return this._req(`${this._url}/users/me/avatar`, {
       headers: this._headers,
-      method: 'PATCH',
+      method: "PATCH",
       body: JSON.stringify({
-        avatar: data.avatar
-      })
-    })
+        avatar: data.avatar,
+      }),
+    });
   }
 }

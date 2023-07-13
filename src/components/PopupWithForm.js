@@ -4,8 +4,8 @@ export class PopupWithForm extends Popup {
     super({ selector });
     this._form = this._popup.querySelector(".popup__form");
     this._inputList = this._form.querySelectorAll(".popup__input");
-    this._btn = this._form.querySelector('.popup__button')
-    this._btnText = this._btn.textContent
+    this._btn = this._form.querySelector(".popup__button");
+    this._btnText = this._btn.textContent;
     this._submit = submit;
   }
   _getInputValues() {
@@ -31,10 +31,10 @@ export class PopupWithForm extends Popup {
   }
 
   showLoading(state) {
-    if(state) {
-      this._btn.textContent = 'Сохранение...'
+    if (state) {
+      this._btn.textContent = "Сохранение...";
     } else {
-      this._btn.textContent = this._btnText
+      this._btn.textContent = this._btnText;
     }
   }
 
