@@ -53,7 +53,7 @@ export class FormValidator {
     this._inputList.forEach((item) => {
       item.addEventListener("input", (evt) => {
         this.handleFormInput(evt);
-        // this.toggleButton();
+        this.toggleButton();
       });
     });
   }

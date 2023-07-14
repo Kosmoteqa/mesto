@@ -7,7 +7,7 @@ import { UserInfo } from "../components/UserInfo";
 import { Section } from "../components/Section";
 import { PopupWithDelete } from "../components/PopupWithDelete";
 import Api from "../components/Api";
-import { formValidationConfig } from "../components/constatnts";
+import { formValidationConfig } from "../utils/constants";
 
 const openPopUpInfoButton = document.querySelector(".profile__edit-button");
 

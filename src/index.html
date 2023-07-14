@@ -9,20 +9,20 @@
 
 <body class="page">
   <header class="header">
-    <img src="<%=require('../images/Vector.svg')%>" alt="Логотип" class="header__logo" />
+    <img src="<%=require('./images/Vector.svg')%>" alt="Логотип" class="header__logo" />
   </header>
 
   <section class="profile">
     <div class="profile__info">
       <div class="profile__overlay">
-        <img src="<%=require('../images/Avatar.png')%>" alt="аватар" class="profile__avatar">
+        <img src="<%=require('./images/Avatar.png')%>" alt="аватар" class="profile__avatar">
       </div>
 
       <div class="profile__info-text">
         <div class="profile__title-edit-button">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
           <button type="button" aria-label="кнопка 'изменить'" class="profile__edit-button">
-            <img src="<%=require('../images/edit.svg')%> " alt="кнопка 'изменить'" class="profile__edit-image" />
+            <img src="<%=require('./images/edit.svg')%> " alt="кнопка 'изменить'" class="profile__edit-image" />
           </button>
         </div>
         <p class="profile__about">Исследователь океана</p>
@@ -30,7 +30,7 @@
 
     </div>
     <button type="button" aria-label="кнопка 'добавить'" class="profile__add-button">
-      <img src="<%=require('../images/add.svg')%>" alt="кнопка 'добавить'" class="profile__add-image" />
+      <img src="<%=require('./images/add.svg')%>" alt="кнопка 'добавить'" class="profile__add-image" />
     </button>
   </section>
 
@@ -45,7 +45,7 @@
   <div class="popup popup_edit">
     <div class="popup__container">
       <button class="" type="button" aria-label="крестик">
-        <img src="<%=require('../images/cross hair.svg')%>" alt="крестик"
+        <img src="<%=require('./images/cross hair.svg')%>" alt="крестик"
           class="popup__close-button popup__close-image" />
       </button>
       <h2 class="popup__title">Редактировать профиль</h2>
@@ -70,7 +70,7 @@
   <div class="popup popup_add" id="popup_add">
     <div class="popup__container popup__container_add">
       <button class="" type="button" aria-label="крестик">
-        <img src="<%=require('../images/cross hair.svg')%>" alt="крестик"
+        <img src="<%=require('./images/cross hair.svg')%>" alt="крестик"
           class="popup__close-button popup__close-image" />
       </button>
       <h2 class="popup__title popup__title_add">Новое место</h2>
@@ -95,9 +95,9 @@
   <template class="card" id="template-card">
     <li class="card__item">
       <button class="card__delete-button" type="button" aria-label="удалить">
-        <img src="<%=require('../images/Trash.svg')%>" alt="удалить" class="card__delete-image" />
+        <img src="<%=require('./images/Trash.svg')%>" alt="удалить" class="card__delete-image" />
       </button>
-      <img src="<%=require('../images/Union.svg')%>" alt="" class="card__image" />
+      <img src="<%=require('./images/Union.svg')%>" alt="" class="card__image" />
       <div class="card__info">
         <h2 class="card__title"></h2>
         <div class="card__like-count">
@@ -111,7 +111,7 @@
   <div class="popup popup-image">
     <div class="popup-image__container">
       <button class="popup-image__close" type="button" aria-label="крестик">
-        <img src="<%=require('../images/cross hair.svg')%>" alt="крестик"
+        <img src="<%=require('./images/cross hair.svg')%>" alt="крестик"
           class="popup__close-button popup-image__close-image" />
       </button>
       <img src="#" alt="" class="popup-image__photo" />
@@ -122,7 +122,7 @@
   <div class="popup-check popup">
     <div class="popup__container popup-check__container">
       <button class="popup-check__close" type="button" aria-label="крестик">
-        <img src="<%=require('../images/cross hair.svg')%>" alt="крестик"
+        <img src="<%=require('./images/cross hair.svg')%>" alt="крестик"
           class="popup__close-button popup-check__close" />
       </button>
       <h1 class="popup__title popup-check__title">Вы уверены ?</h1>
@@ -137,7 +137,7 @@
     <div class="popup__container popup-avatar__container">
       <h1 class="popup__title popup-avatar__title">Обновить аватар</h1>
       <button class="popup-avatar__close" type="button" aria-label="крестик">
-        <img src="<%=require('../images/cross hair.svg')%>" alt="крестик"
+        <img src="<%=require('./images/cross hair.svg')%>" alt="крестик"
           class="popup__close-button popup-avatar__close" />
       </button>
       <form action="" class="popup__form popup-avatar__form" name="formAddCard" novalidate autocomplete>
